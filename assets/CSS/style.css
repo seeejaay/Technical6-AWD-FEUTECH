@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container-fluid {
+  border: 2px solid red;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.48);
+  width: 100%;
+  max-width: 500px !important;
+  border-radius: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 !important;
+  overflow: hidden;
+  height: 600px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  max-width: 500px !important;
+  height: fit-content !important;
+}
+.button {
+  width: 100%;
+  max-width: 500px !important;
+  height: 64px;
+  background: transparent;
+  border: 0;
+  font-size: clamp(20px, 1vw, 24px);
+
+  &:hover {
+    background: #20b1dd;
+    color: #fff;
+  }
+  &.active {
+    background: #20b1dd;
+    color: #fff;
+  }
+}
+.btn-login {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.btn-singup {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.form {
+  margin: 20px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.single-input {
+  width: 400px;
+  border: 1px solid #c1c1c1;
+  display: flex;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 2px;
+}
+.single-input i {
+  padding: 8px 16px;
+  color: #20b1dd;
+  font-size: 24px; /* Increase icon size */
+}
+.single-input input {
+  border: 0px solid #c1c1c1;
+  width: 100%;
+  outline: none;
+  height: 45px; /* Increase height */
+  font-size: 22px; /* Increase font size */
+}
+.submit-btn {
+  border: 0px solid #c1c1c1;
+  margin-top: 30px;
+}
+.submit-btn input {
+  background: #20b1dd;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px !important;
+  padding: 0;
+  font-size: 24px;
+  border: 2px black !important;
+}
+
+.btn-style {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid black !important;
+  background: transparent;
+}
