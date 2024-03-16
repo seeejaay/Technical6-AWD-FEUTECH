@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.3 ease;
+  transition: all 300ms ease-in-out;
+  font-family: "Roboto", sans-serif !important;
 }
 
 .container-fluid {
@@ -64,6 +66,33 @@
   max-width: 350px;
 }
 
+.logo img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px !important;
+}
+.login-button span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.button {
+  width: 100%;
+  max-width: 200px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  outline: none;
+  background: #004cff;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
