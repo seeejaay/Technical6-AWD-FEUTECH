@@ -23,49 +23,35 @@
   <body>
     <main class="container-fluid">
       <div class="container">
-        <div class="button-group">
-          <button class="button btn-login">Log In</button>
-          <button class="button btn-singup">Sign Up</button>
+        <div class="form-wrapper active">
+          <form class="form">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="Enter your username"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Enter your password"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
         </div>
-        <form class="form">
-          <div class="single-input">
-            <span><i class="fas fa-user"></i></span>
-            <input type="text" placeholder="User Name" />
-          </div>
-          <div class="single-input">
-            <span><i class="fas fa-unlock"></i></span>
-            <input type="password" placeholder="Password" />
-          </div>
-
-          <div class="single-input submit-btn">
-            <input type="submit" value="Login" />
-          </div>
-
-          <div class="submit-buttons">
-            <!-- Login with Google -->
-
-            <button class="btn-style">
-              <i class="fab fa-google"></i>
-            </button>
-
-            <!-- Login with LinkedIn -->
-
-            <button class="btn-style">
-              <i class="fab fa-linkedin"></i>
-            </button>
-          </div>
-        </form>
+        <div class="login-button">
+          <button class="button" id="_button">Log In</button>
+        </div>
       </div>
     </main>
     <script src="./assets/JS/script.js"></script>
-
-    <!--JQUERY-->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
 
     <!--BOOTSTRAP JS-->
     <script
